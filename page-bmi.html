@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project Kullasatree Sawong</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("image/pexels-ella-olsson-1640770.jpg");
+        background-size: cover;
+        margin: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="./fontawesome/js/all.js"></script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="page-bmi.html" id="active">BMI</a>
+      <a href="page-bmr.html">BMR</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+    <br />
+    <div class="container">
+      <div id="boxdata">
+        <br>
+        <h2>Body Mass Index (BMI)</h2>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Body Mass Index (BMI) is the ratio of weight to height. used to
+          indicate fat or thin In adults aged 20 years and over, the importance
+          of knowing BMI to see the risk of various diseases If the computed
+          value too much or too little because if you are obese There is a risk
+          of high blood pressure, diabetes, ischemic heart disease. and
+          gallstones in the gallbladder but at the same time who is too thin
+          will be at risk of infection Decreased performance in the body
+          Therefore, should maintain a normal weight level.
+        </p>
+        <br />
+        <h3>Body Mass Index Calculator (BMI)</h3>
+
+        <div class="contianerbox" >
+          <br />
+          <!-- <div id="toBMI"></div> -->
+          <h5>Body weight (kg) :</h5>
+          <input class="form-control" type="number" id="numBodyWeight" value="" placeholder="Body weight" maxlength="5" required>
+          <br />
+          <h5>Height (cm) :</h5>
+          <input class="form-control" type="number" id="numHeight" value="" placeholder="Height" maxlength="5" required>
+          <br />
+          <button type="button" class="btn btn-success" onclick="toBMI()">Submit</button>&nbsp;
+          <button type="button" class="btn btn-danger" onclick="ClearFieldsBMI()">
+            Clear
+          </button>
+          <br />
+          <br />
+          <div class="ctn-box">
+
+            <div id="toBMI"></div>
+
+            <div id="result"></div>
+
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
