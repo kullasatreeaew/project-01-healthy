@@ -26,6 +26,7 @@
         width: 50%;
       }
     </style>
+
     <script src="./fontawesome/js/all.js"></script>
   </head>
   <body>
@@ -85,7 +86,7 @@
         </select>
 
         <br />
-        <button type="button" name="submit" class="btn btn-success" onclick="toBMR()">Submit</button>&nbsp;
+        <button type="button" name="submit" class="btn btn" style="background-color: rgb(91, 181, 208); color:white;" onclick="toBMR()">Submit</button>&nbsp;
         <button type="button" name="clear" class="btn btn-danger" onclick="ClearFieldsBMR()">
           Clear
         </button>
@@ -93,12 +94,15 @@
         <br />
         
         <div class="ctn-box">
-          <div id="totalBMR"></div>
-          <div id="result"></div>
+          <div class="row">
+          <div id="totalBMR" style="font-size: 24px; line-height: 50px;"></div>
+          <div id="result" style="font-size: 24px; line-height: 50px;"></div>
         </div>
-        <br />
+        </div>
+        <br>
       </div>
     </div>
+
 <br>
     <script src="./js/app.js"></script>
   </body>
